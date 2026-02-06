@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+
+@theme{
+    /* colors */
+    --color-background:#010725;
+    --color-main-color:#0328EE;
+    --color-card-color:#010D50;
+    
+
+
+    /* font */
+    --font-main:"DM Sans";
+}
+
+@layer base{
+
+    body{
+        @apply font-main bg-background text-white;
+    }
+    
+
+    .btn-main{
+        @apply px-8 py-6.75 bg-main-color rounded-full hover:bg-[#031FB4] transition-all active:outline cursor-pointer  uppercase leading-[16px] tracking-[1.6px] font-medium;
+    }
+    .btn-secondary{
+        @apply px-8 py-6.75 bg-white/10 rounded-full hover:bg-main-color transition-all active:outline cursor-pointer  uppercase leading-[16px] tracking-[1.6px] font-medium;
+    }
+    .btn-white{
+        @apply px-8 py-6.75 bg-white text-main-color rounded-full hover:bg-[#031FB4] hover:text-white transition-all  active:outline cursor-pointer uppercase leading-[16px] tracking-[1.6px] font-medium;
+    }
+
+    .text{
+        @apply text-[16px] sm:text-[17px] xl:text-[18px]
+               leading-6.5 sm:leading-7.25 xl:leading-8
+               font-normal tracking-normal;
+    }
+
+    h1{
+        @apply text-[38px] sm:text-[52px] xl:text-[66px]
+               leading-11.5 sm:leading-15.75  xl:leading-20 
+               tracking-[-1px] font-bold;
+    }
+
+    h2{
+        @apply text-[28px] sm:text-[35px] xl:text-[42px]
+               leading-9 sm:leading-11 xl:leading-13.75 
+               tracking-normal font-bold;
+    }
+    
+}
+
+@utility container {
+        @apply mx-auto px-6;
+    }
+
+
+
+
+
