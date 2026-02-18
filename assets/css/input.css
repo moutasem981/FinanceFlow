@@ -16,7 +16,7 @@
 @layer base{
 
     body{
-        @apply font-main bg-background text-white ;
+        @apply font-main bg-background text-white relative max-w-600 mx-auto ;
     }
     
 
