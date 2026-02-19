@@ -38,6 +38,9 @@
     .text-title{
         @apply leading-6.5 text-[18px] tracking-[0.9px] uppercase font-bold;
     }
+    .users-name{
+        @apply text-[16px] font-bold leading-4.5 tracking-[0.8px] uppercase ;
+    }
     .card{
         @apply bg-card-color py-12 px-5.75 rounded-[40px] w-full md:w-81.25 max-w-[400px];
     }
