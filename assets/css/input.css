@@ -35,7 +35,7 @@
 
     /* cards */
     .card{
-        @apply bg-card-color py-12 px-5.75 rounded-[40px] w-full md:w-81.25 max-w-[400px];
+        @apply bg-card-color py-12 px-6 rounded-[40px] w-full md:w-81.25 max-w-[400px];
     }
 
      /* lines section */
@@ -81,7 +81,7 @@
 }
 
 @utility container {
-        @apply mx-auto px-4 ;
+        @apply mx-auto px-4 max-w-[1300px];
     }
 
 
