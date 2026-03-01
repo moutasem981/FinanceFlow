@@ -336,6 +336,12 @@
   .mx-\[28\%\] {
     margin-inline: 28%;
   }
+  .mx-\[30\%\] {
+    margin-inline: 30%;
+  }
+  .mx-\[30\] {
+    margin-inline: 30;
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -378,6 +384,12 @@
   .mt-10\.5 {
     margin-top: calc(var(--spacing) * 10.5);
   }
+  .mt-20 {
+    margin-top: calc(var(--spacing) * 20);
+  }
+  .mt-40 {
+    margin-top: calc(var(--spacing) * 40);
+  }
   .mt-\[80\.57px\] {
     margin-top: 80.57px;
   }
@@ -413,6 +425,9 @@
   }
   .mb-8\.5 {
     margin-bottom: calc(var(--spacing) * 8.5);
+  }
+  .mb-11 {
+    margin-bottom: calc(var(--spacing) * 11);
   }
   .mb-20 {
     margin-bottom: calc(var(--spacing) * 20);
@@ -647,6 +662,9 @@
   }
   .max-w-\[390px\] {
     max-width: 390px;
+  }
+  .max-w-\[500px\] {
+    max-width: 500px;
   }
   .max-w-\[586px\] {
     max-width: 586px;
@@ -1514,6 +1532,11 @@
       top: calc(var(--spacing) * 50);
     }
   }
+  .md\:mx-\[30\%\] {
+    @media (width >= 48rem) {
+      margin-inline: 30%;
+    }
+  }
   .md\:mt-3 {
     @media (width >= 48rem) {
       margin-top: calc(var(--spacing) * 3);
@@ -1823,9 +1846,29 @@
       margin-top: calc(var(--spacing) * 11);
     }
   }
+  .lg\:mt-31 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 31);
+    }
+  }
   .lg\:mt-31\.25 {
     @media (width >= 64rem) {
       margin-top: calc(var(--spacing) * 31.25);
+    }
+  }
+  .lg\:mt-31\.75 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 31.75);
+    }
+  }
+  .lg\:mt-32 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 32);
+    }
+  }
+  .lg\:mt-34 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 34);
     }
   }
   .lg\:mt-37\.5 {
@@ -1846,6 +1889,16 @@
   .lg\:mb-27\.25 {
     @media (width >= 64rem) {
       margin-bottom: calc(var(--spacing) * 27.25);
+    }
+  }
+  .lg\:mb-57\.5 {
+    @media (width >= 64rem) {
+      margin-bottom: calc(var(--spacing) * 57.5);
+    }
+  }
+  .lg\:mb-\[230px\] {
+    @media (width >= 64rem) {
+      margin-bottom: 230px;
     }
   }
   .lg\:block {
