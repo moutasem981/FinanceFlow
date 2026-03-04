@@ -60,9 +60,12 @@
                leading-9 sm:leading-11 xl:leading-13.75 
                tracking-normal font-bold;
     }
+
+    .ISO-Code{
+        @apply bg-card-color pt-[6.5px] pb-[7.5px] ps-[8.5px] pe-[6.5px] rounded-full text-[12px] leading-3 tracking-[0.6px] font-medium;
+    }
+
     
-
-
 
     h1{
         @apply text-[38px] sm:text-[52px] xl:text-[66px]
@@ -76,6 +79,11 @@
                tracking-normal font-bold;
     }
 
+    th ,
+    td{
+        @apply py-10 text-start;
+
+    }
     
     
 }
