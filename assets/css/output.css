@@ -181,6 +181,9 @@
   }
 }
 @layer utilities {
+  .visible {
+    visibility: visible;
+  }
   .sr-only {
     position: absolute;
     width: 1px;
@@ -472,6 +475,9 @@
   }
   .hidden {
     display: none;
+  }
+  .inline {
+    display: inline;
   }
   .table {
     display: table;
@@ -1001,6 +1007,9 @@
   }
   .py-16\.25 {
     padding-block: calc(var(--spacing) * 16.25);
+  }
+  .py-20 {
+    padding-block: calc(var(--spacing) * 20);
   }
   .py-21 {
     padding-block: calc(var(--spacing) * 21);
@@ -1579,6 +1588,16 @@
   .sm\:mt-6\.5 {
     @media (width >= 40rem) {
       margin-top: calc(var(--spacing) * 6.5);
+    }
+  }
+  .sm\:block {
+    @media (width >= 40rem) {
+      display: block;
+    }
+  }
+  .sm\:hidden {
+    @media (width >= 40rem) {
+      display: none;
     }
   }
   .sm\:w-2\/3 {
@@ -2375,6 +2394,11 @@
   .lg\:py-20 {
     @media (width >= 64rem) {
       padding-block: calc(var(--spacing) * 20);
+    }
+  }
+  .lg\:py-30 {
+    @media (width >= 64rem) {
+      padding-block: calc(var(--spacing) * 30);
     }
   }
   .lg\:pe-12 {
