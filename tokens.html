@@ -107,7 +107,7 @@
     <main>
 
         <!-- hero section -->
-        <!-- <section class="pt-30.25 lg:pt-48 pb-20 lg:pb-56.25">
+        <section class="pt-30.25 lg:pt-48 pb-20 lg:pb-56.25">
             <div class="container">
                 <div class="flex justify-center items-center">
                     <div class="text-start md:text-center">
@@ -118,79 +118,143 @@
 
                 </div>
 
-                <div>
+                <div class="mt-12 lg:mt-25">
                     <table class="w-full">
                         <thead>
                             <tr class="users-name">
-                                <th>Name</th>
-                                <th class="text-center">Description</th>
-                                <th>Market Cap</th>
-                                <th>Volume</th>
-                                <th>Website</th>
+                                <th class="hidden sm:table-cell ">Name</th>
+                                <th class="hidden sm:table-cell text-center">Description</th>
+                                <th class="hidden lg:table-cell ">Market Cap</th>
+                                <th class="hidden md:table-cell ">Volume</th>
+                                <th class="hidden sm:table-cell ">Website</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr class="border-y border-white/10 ">
-                                <td class="flex gap-4 items-center ">
-                                    <img src="./assets/img/tokens/btc.svg" alt="">
+                            <tr class="sm:border-y border-white/10 max-sm:flex flex-col">
+                                <td class="max-sm:border-b border-white/10">
+                                    <span class="text-main uppercase font-black sm:hidden">Name</span>
+                                    <div class="flex gap-4 items-center mt-4">
+                                    <img src="./assets/img/tokens/btc.svg" alt="Bitcoin logo">
                                     <span class="text-[18px] leading-5 font-bold">Bitcoin</span> 
                                     <span class="ISO-Code">BTC</span>
+                                    </div>
                                 </td>
-                                <td class="text-center"><p class="w-1/2  mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p></td>
-                                <td><span class="text-title tracking-normal">$252,844,036,453 USD</span></td>
-                                <td><span class="text-title tracking-normal">$30,504,879,301 USD</span></td>
-                                <td><a href="#" class="underline">Visit Website</a></td>
-                            </tr>
-                            <tr class="border-y border-white/10 ">
-                                <td class="flex gap-4 items-center ">
-                                    <img src="./assets/img/tokens/btc.svg" alt="">
-                                    <span class="text-[18px] leading-5 font-bold">Bitcoin</span> 
-                                    <span class="ISO-Code">BTC</span>
+                                <td class="max-sm:border-b border-white/10">
+                                    <span class="text-main uppercase font-black sm:hidden">Description</span>
+                                    <div class="sm:text-center mt-4">
+                                    <p class="sm:w-1/2 max-sm:w-[70%] sm:mx-auto text-main">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                    </div>
                                 </td>
-                                <td class="text-center"><p class="w-1/2  mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p></td>
-                                <td><span class="text-title tracking-normal">$252,844,036,453 USD</span></td>
-                                <td><span class="text-title tracking-normal">$30,504,879,301 USD</span></td>
-                                <td><a href="#" class="underline">Visit Website</a></td>
-                            </tr>
-                            <tr class="border-y border-white/10 ">
-                                <td class="flex gap-4 items-center ">
-                                    <img src="./assets/img/tokens/btc.svg" alt="">
-                                    <span class="text-[18px] leading-5 font-bold">Bitcoin</span> 
-                                    <span class="ISO-Code">BTC</span>
+                                <td class="max-sm:border-b border-white/10 sm:max-lg:hidden">
+                                    <span class="text-main uppercase font-black sm:hidden">Market Cap</span>
+                                    <div class="mt-4">
+                                    <span class="text-title tracking-normal">$252,844,036,453 USD</span>
+                                    </div>
                                 </td>
-                                <td class="text-center"><p class="w-1/2  mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p></td>
-                                <td><span class="text-title tracking-normal">$252,844,036,453 USD</span></td>
-                                <td><span class="text-title tracking-normal">$30,504,879,301 USD</span></td>
-                                <td><a href="#" class="underline">Visit Website</a></td>
-                            </tr>
-                            <tr class="border-y border-white/10 ">
-                                <td class="flex gap-4 items-center ">
-                                    <img src="./assets/img/tokens/btc.svg" alt="">
-                                    <span class="text-[18px] leading-5 font-bold">Bitcoin</span> 
-                                    <span class="ISO-Code">BTC</span>
+                                <td class="max-sm:border-b border-white/10 sm:max-md:hidden">
+                                    <span class="text-main uppercase font-black sm:hidden">Volume</span>
+                                    <div class="mt-4">
+                                    <span class="text-title tracking-normal">$30,504,879,301 USD</span>
+                                    </div>
                                 </td>
-                                <td class="text-center"><p class="w-1/2  mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p></td>
-                                <td><span class="text-title tracking-normal">$252,844,036,453 USD</span></td>
-                                <td><span class="text-title tracking-normal">$30,504,879,301 USD</span></td>
-                                <td><a href="#" class="underline">Visit Website</a></td>
-                            </tr>
-                            <tr class="border-y border-white/10 ">
-                                <td class="flex gap-4 items-center">
-                                    <img src="./assets/img/tokens/btc.svg" alt="">
-                                    <span class="text-[18px] leading-5 font-bold">Bitcoin</span> 
-                                    <span class="ISO-Code">BTC</span>
+                                <td class="max-sm:border-b border-white/10">
+                                    <span class="text-main uppercase font-black sm:hidden">Website</span>
+                                    <div class="mt-4">
+                                    <a href="#" class="underline">Visit Website</a>
+                                    </div>
                                 </td>
-                                <td class="text-center"><p class="w-1/2  mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p></td>
-                                <td><span class="text-title tracking-normal">$252,844,036,453 USD</span></td>
-                                <td><span class="text-title tracking-normal">$30,504,879,301 USD</span></td>
-                                <td><a href="#" class="underline">Visit Website</a></td>
                             </tr>
+                            <tr class="border-y border-white/10 max-sm:hidden ">
+                                <td>
+                                    
+                                    <div class="flex gap-4 items-center ">
+                                    <img src="./assets/img/tokens/eth.svg" alt="Ethereum logo">
+                                    <span class="text-[18px] leading-5 font-bold">Ethereum</span> 
+                                    <span class="ISO-Code">ETH</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-center">
+                                    <p class="w-1/2 mx-auto text-main">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                    </div>
+                                </td>
+                                <td class="max-lg:hidden">
+                                    <span class="text-title tracking-normal">$252,844,036,453 USD</span>
+                                    
+                                </td>
+                                <td class="max-md:hidden">
+                                    <span class="text-title tracking-normal">$30,504,879,301 USD</span>
+                                    
+                                </td>
+                                <td>
+                                    <a href="#" class="underline">Visit Website</a>
+                                    
+                                </td>
+                            </tr>
+                         
+                            <tr class="border-y border-white/10 max-sm:hidden ">
+                                <td>
+                                    
+                                    <div class="flex gap-4 items-center ">
+                                    <img src="./assets/img/tokens/ltc.svg" alt="Litecoin logo">
+                                    <span class="text-[18px] leading-5 font-bold">Litecoin</span> 
+                                    <span class="ISO-Code">LTC</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-center">
+                                    <p class="w-1/2 mx-auto text-main">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                    </div>
+                                </td>
+                                <td class="max-lg:hidden">
+                                    <span class="text-title tracking-normal">$252,844,036,453 USD</span>
+                                    
+                                </td>
+                                <td class="max-md:hidden">
+                                    <span class="text-title tracking-normal">$30,504,879,301 USD</span>
+                                    
+                                </td>
+                                <td>
+                                    <a href="#" class="underline">Visit Website</a>
+                                    
+                                </td>
+                            </tr>
+                         
+                            <tr class="border-y border-white/10 max-sm:hidden ">
+                                <td>
+                                    
+                                    <div class="flex gap-4 items-center ">
+                                    <img src="./assets/img/tokens/btc.svg" alt="TRON logo">
+                                    <span class="text-[18px] leading-5 font-bold">TRON</span> 
+                                    <span class="ISO-Code">TRX</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-center">
+                                    <p class="w-1/2 mx-auto text-main">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                    </div>
+                                </td>
+                                <td class="max-lg:hidden">
+                                    <span class="text-title tracking-normal">$252,844,036,453 USD</span>
+                                    
+                                </td>
+                                <td class="max-md:hidden">
+                                    <span class="text-title tracking-normal">$30,504,879,301 USD</span>
+                                    
+                                </td>
+                                <td>
+                                    <a href="#" class="underline">Visit Website</a>
+                                    
+                                </td>
+                            </tr>
+                         
+                           
                         </tbody>
                     </table>    
                 </div>
             </div>
 
-        </section> -->
+        </section> 
     </main>
 
 
