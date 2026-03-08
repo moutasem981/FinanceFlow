@@ -32,7 +32,7 @@
     <!-- header siction -->
 
     <header
-        class="pt-6 pb-px lg:pt-8.25 lg:pb-8.25  fixed w-full top-0 left-0 right-0 mx-auto z-40 max-lg:bg-background">
+        class="pt-6 pb-px lg:pt-8.25 lg:pb-8.25  fixed w-full top-0 left-0 right-0 mx-auto z-40">
 
         <div class="container px-6  flex justify-between items-center uppercase">
             <div class="left-side flex gap-8 items-center ">
@@ -104,44 +104,58 @@
 
     </header>
 
-    <main>
-        <section class="pt-30.25 lg:pt-53 pb-20 lg:pb-30">
+    <main class="overflow-hidden">
+
+        <!-- Get in touch section -->
+
+        <section class="pt-30.25 lg:pt-53 pb-20 lg:pb-30 relative overflow-hidden">
             <div class="container">
                 <h1>Get in touch</h1>
-                
+
                 <div class="flex max-lg:flex-col gap-12 md:gap-16  mt-10 lg:mt-13">
                     <form action="" class="w-full flex flex-col  gap-6 sm:gap-8.5">
                         <div class="flex max-sm:flex-col gap-6 w-full">
                             <div class="flex flex-col gap-3 w-full">
                                 <label class="text-title">name</label>
-                                <input type="text" class="border border-background bg-card-color rounded-full w-full py-5 px-6.25 text-main text-[18px]" placeholder="Full Name">
+                                <input type="text"
+                                    class="border border-background bg-card-color rounded-full w-full py-5 px-6.25 text-main text-[18px]"
+                                    placeholder="Full Name">
                             </div>
                             <div class="flex flex-col gap-3 w-full">
                                 <label class="text-title">emali</label>
-                                <input type="email" class="border border-background bg-card-color rounded-full w-full py-5 px-6.25 text-main text-[18px]" placeholder="email@example.com">
+                                <input type="email"
+                                    class="border border-background bg-card-color rounded-full w-full py-5 px-6.25 text-main text-[18px]"
+                                    placeholder="email@example.com">
                             </div>
                         </div>
                         <div class="flex max-sm:flex-col gap-6 w-full">
                             <div class="flex flex-col gap-3 w-full">
                                 <label class="text-title">Company</label>
-                                <input type="number" class="border border-background bg-card-color rounded-full w-full py-5 px-6.25 text-main text-[18px]" placeholder="Company Name">
+                                <input type="number"
+                                    class="border border-background bg-card-color rounded-full w-full py-5 px-6.25 text-main text-[18px]"
+                                    placeholder="Company Name">
                             </div>
                             <div class="flex flex-col gap-3 w-full">
                                 <label class="text-title">Subject</label>
-                                <input type="text" class="border border-background bg-card-color rounded-full w-full py-5 px-6.25 text-main text-[18px]" placeholder="How can we help?">
+                                <input type="text"
+                                    class="border border-background bg-card-color rounded-full w-full py-5 px-6.25 text-main text-[18px]"
+                                    placeholder="How can we help?">
                             </div>
                         </div>
-                        
+
                         <div class="flex flex-col gap-3 w-full">
-                                <label class=" text-title">message</label>
-                                <textarea id="message" rows="4" class="border border-background bg-card-color w-full py-5 px-6.25 text-main text-heading rounded-[14px] text-[18px]" placeholder="Your Message"></textarea>
+                            <label class=" text-title">message</label>
+                            <textarea id="message" rows="4"
+                                class="border border-background bg-card-color w-full py-5 px-6.25 text-main text-heading rounded-[14px] text-[18px]"
+                                placeholder="Your Message"></textarea>
                         </div>
 
-                    <button class="btn-main xl:w-50.5 mt-2 lg:mt-5">Send Message</button>
+                        <button class="btn-main xl:w-50.5 mt-2 lg:mt-5">Send Message</button>
                     </form>
                     <div class="xl:w-[42%] max-w-100">
                         <span class="title-card max-xl:text-[28px]">Want to reach us directly?</span>
-                        <p class="text-main  mt-5 lg:mt-3 pe-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id dui pharetra elementum sit id sagittis non donec egestas.</p>
+                        <p class="text-main  mt-5 lg:mt-3 pe-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Id dui pharetra elementum sit id sagittis non donec egestas.</p>
                         <nav class="mt-6 lg:mt-8">
                             <ul class="flex flex-col gap-6">
                                 <li>
@@ -166,10 +180,118 @@
                         </nav>
                     </div>
                 </div>
-                
-                
-                
-                
+            </div>
+             <div class="h-218.5 sm:w-218.5 w-158.25 bg-card-color absolute -z-50 rounded-base blur-[120px] -right-49.25 -top-[31%] "></div>
+
+        </section>
+
+        <!-- FAQ section -->
+
+        <section class="py-20 lg:py-30">
+            <div class="container">
+
+                <h2 class="text-center lg:text-[66px]">FAQ</h2>
+
+                <div id="accordion-collapse" data-accordion="collapse" class="max-w-218 mx-auto mt-8 lg:mt-20">
+                    <div id="accordion-collapse-heading-1" class="py-8 px-2  border-b border-b-white/20">
+                        <button type="button" class="flex items-center justify-between w-full "
+                            data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
+                            aria-controls="accordion-collapse-body-1">
+                            <h3 class="title-card max-sm:text-[18px] lg:text-[28px] tracking-[0.28px] ">Question 1</h3>
+                            <svg data-accordion-icon class=" rotate-180 shrink-0" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="none"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m5 15 7-7 7 7" />
+                            </svg>
+                        </button>
+                        <div id="accordion-collapse-body-1" aria-labelledby="accordion-collapse-heading-1">
+                            <div class="mt-4 text-main font-light">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id dui pharetra elementum
+                                    sit id sagittis non donec egestas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="accordion-collapse-heading-2" class="py-8 px-2  border-b border-b-white/20">
+                        <button type="button" class="flex items-center justify-between w-full "
+                            data-accordion-target="#accordion-collapse-body-2" aria-expanded="false"
+                            aria-controls="accordion-collapse-body-2">
+                            <h3 class="title-card max-sm:text-[18px] lg:text-[28px] tracking-[0.28px] ">Question 2</h3>
+                            <svg data-accordion-icon class=" rotate-180 shrink-0" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="none"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m5 15 7-7 7 7" />
+                            </svg>
+                        </button>
+                        <div id="accordion-collapse-body-2" aria-labelledby="accordion-collapse-heading-2">
+                            <div class="mt-4 text-main font-light">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id dui pharetra elementum
+                                    sit id sagittis non donec egestas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="accordion-collapse-heading-3" class="py-8 px-2  border-b border-b-white/20">
+                        <button type="button" class="flex items-center justify-between w-full "
+                            data-accordion-target="#accordion-collapse-body-3" aria-expanded="false"
+                            aria-controls="accordion-collapse-body-3">
+                            <h3 class="title-card max-sm:text-[18px] lg:text-[28px] tracking-[0.28px] ">Question 3</h3>
+                            <svg data-accordion-icon class=" rotate-180 shrink-0" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="none"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m5 15 7-7 7 7" />
+                            </svg>
+                        </button>
+                        <div id="accordion-collapse-body-3" aria-labelledby="accordion-collapse-heading-3">
+                            <div class="mt-4 text-main font-light">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id dui pharetra elementum
+                                    sit id sagittis non donec egestas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="accordion-collapse-heading-4" class="py-8 px-2  border-b border-b-white/20">
+                        <button type="button" class="flex items-center justify-between w-full "
+                            data-accordion-target="#accordion-collapse-body-4" aria-expanded="false"
+                            aria-controls="accordion-collapse-body-4">
+                            <h3 class="title-card max-sm:text-[18px] lg:text-[28px] tracking-[0.28px] ">Question 4</h3>
+                            <svg data-accordion-icon class=" rotate-180 shrink-0" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="none"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m5 15 7-7 7 7" />
+                            </svg>
+                        </button>
+                        <div id="accordion-collapse-body-4" aria-labelledby="accordion-collapse-heading-4">
+                            <div class="mt-4 text-main font-light">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id dui pharetra elementum
+                                    sit id sagittis non donec egestas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="accordion-collapse-heading-5" class="py-8 px-2  border-b border-b-white/20">
+                        <button type="button" class="flex items-center justify-between w-full "
+                            data-accordion-target="#accordion-collapse-body-5" aria-expanded="false"
+                            aria-controls="accordion-collapse-body-5">
+                            <h3 class="title-card max-sm:text-[18px] lg:text-[28px] tracking-[0.28px] ">Question 5</h3>
+                            <svg data-accordion-icon class=" rotate-180 shrink-0" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="none"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m5 15 7-7 7 7" />
+                            </svg>
+                        </button>
+                        <div id="accordion-collapse-body-5" aria-labelledby="accordion-collapse-heading-5">
+                            <div class="mt-4 text-main font-light">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id dui pharetra elementum
+                                    sit id sagittis non donec egestas.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                   
+                    
+                </div>
             </div>
 
         </section>
